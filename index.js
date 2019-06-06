@@ -1,7 +1,4 @@
-'use strict';
 
-function getDogImage(numberOfDogs = 3) {
-  fetch(`https://dog.ceo/api/breeds/image/random/${numberOfDogs}`)
 'use strict';
 
 function getDogImage(numberOfDogs = 3) {
