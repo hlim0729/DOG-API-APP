@@ -1,6 +1,6 @@
 'use strict';
 
-function getDogImage(numberOfDogs = 3) {
+function getDogImage(numberOfDogs =3) {
   fetch(`https://dog.ceo/api/breeds/image/random/${numberOfDogs}`)
     .then(response => response.json())
     .then(responseJson => 
@@ -15,7 +15,7 @@ function displayResults(responseJson) {
 
    for (let dog of responseJson.message) {
      $('.results').append(
-     `<img src="${dog}" class="results-img" width="200" height="100`);
+     `<img src="${dog}" class="results-img" width="200" height="100">`);
    }
   //display the results section
   $('.results').removeClass('hidden');
